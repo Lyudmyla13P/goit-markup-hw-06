@@ -96,20 +96,309 @@ body {
 
      }
  }
+ /* ========Header Mobile Styles====== */
+/* ==========Hero Section Mobile======== */
+.main-title {
+    background-color: #2e2f42;
+    width: 320px;
+    height: 432px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.title{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 72px;
+            padding-top: 72px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            color: #FFF;
+}
+.order-service {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    min-width: 169px;
+    gap: 10px;
+    display: block;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    
+.order-service:hover,
+.order-service:focus{
+    background-color: #404BBF;
+}
+/* ==========Hero Section Mobile======== */
+/* ==========Our Benefits Mobile */
+.strengths-name{
+        margin-bottom: 8px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--NAVY-BLUE, #2E2F42);
+}
+.strengths-item{
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+
+}
+
+.benefits-list{
+    display: none;
+}
+.strengths-descr{
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* ==========Our Benefits Mobile */
+
+/* =======Our Team Mobile====== */
+.team{
+    background-color: #F4F4FD;
+    padding-bottom: 96px;
+}
+.team-member{
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+
+}
+.group{
+    margin-bottom: 72px;
+    padding-top: 96px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE, #2E2F42);
+}
+.acquaintance {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.name {
+
+    padding-top: 32px;
+    border-radius: 0px 0px 4px 4px;
+}
+.section-heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    padding-bottom: 8px;
+
+
+}
+.section-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.benefits-item {
+    display: flex;
+    gap: 24px;
+
+}
+.benefits-link {
+    width: 40px;
+    height: 40px;
+}
+.benefits-list-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefits-list-icon:hover,
+.benefits-list-icon:focus {
+    background-color: #404bbf;
+}
+
+.benefits-icon {
+    fill: #f4f4fd;
+
+}
+/* =======Our Team Mobile====== */
+
+/* ======Our Portfolio=== */
+.portfolio {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+}
+.overlay{
+    display: none;
+}
+.portfolio-title {
+    margin-bottom: 72px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.app{
+    padding: 32px 16px;
+    border-top: none;
+    margin-bottom: 8px
+}
+
+/* ======Our Portfolio=== */
+/* ======Footer Mobile=== */
+.footer{
+     background-color: #2E2F42;
+   
+}
+.footer-marketing{
+    margin-bottom: 72px;
+}
+.logo-footer {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 17.5px;
+    margin-top: 97.5px;
+    text-align: center;
+}
+.studio-footer {
+    color: #F4F4FD;
+}
+.marketing {
+    max-width: 264px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--CLOUD, #F4F4FD);
+}
+.footer-list {
+    align-items: baseline;
+    margin-bottom: 72px;
+}
+.subscribe-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+.social {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    text-align: center;
+
+}
+.footer-item-icon {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer-list-icon {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.footer-link {
+    width: 40px;
+    height: 40px;
+}
+/* ======Footer Mobile=== */
+
+ /* ======Mobile menu======== */
  .mobile-open-btn{
     border: none;
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    top: 0;
+    right: 0;
  }
  .mobile-menu{
-    position: fixed;
+   
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 999999999;
     background-color: #FFF;
+    transform: translateX(100%);
+    transition: transform 250ms linear;
+ }
+ .mobile-menu.is-open{
+    transform: translateX(0%);
+ }
+ .mobile-container{
+    position: relative;
+
  }
  .mobile-menu-close-btn {
      position: absolute;
@@ -138,15 +427,58 @@ body {
  .mobile-menu-close-btn-icon {
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
- .mobile-studio{
+ .mobile-menu-current-page{
     color: #404BBF;
  }
- .mobile-menu-list{
+ .mobile-menu-link{
         font-family: Roboto;
         font-size: 36px;
         font-weight: 700;
-        line-height: 1.1;
+        line-height: 1.11;
         letter-spacing: 0.02em;
-        text-transform: capitalize;
+        color: #2E2F42;
  }
-/* ========Header Mobile Styles====== */
+ .mobile-menu-nav-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-top: 76px;
+    margin-left: 16px;
+    margin-bottom: 168px;
+ }
+.mobile-contact-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 48px;
+}
+.mobile-contact-link{
+    display: block;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.mobile-contact-link-tel{
+    color: #4D5AE5;
+}
+.mobile-item-icon{
+    display: flex;
+    gap: 40px;
+}
+.mobile-social-link{
+    width: 40px;
+    height: 40px;
+}
+.mobile-list-icon{
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+ /* ======Mobile menu======== */
