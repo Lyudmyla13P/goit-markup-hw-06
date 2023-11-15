@@ -75,9 +75,6 @@ body{
     .page-navigation{
         display: flex;
         align-items: center;
-       
-
-       
     }
 .page-header{
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
