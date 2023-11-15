@@ -215,7 +215,7 @@ body{
 }
 .page-navigation:hover,
 .page-navigation:focus{
-    color: page-navigation;
+    color: #404BBF;
 }
 
 /* ======Benefits==== */
@@ -574,6 +574,7 @@ box-shadow: 1px 6px rgba(46, 47, 66, 0.08),
 .subscribe{
     margin-left: auto;
 }
+
 /* ======Footer========= */
 /* ====Backdrop===== */
 .backdrop{

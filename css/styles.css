@@ -189,6 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 72px;
+    align-items: center;
 
 }
 .group{
@@ -203,7 +204,6 @@ body {
     color: var(--NAVY-BLUE, #2E2F42);
 }
 .acquaintance {
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -238,6 +238,8 @@ body {
 .benefits-item {
     display: flex;
     gap: 24px;
+    padding-bottom: 32px;
+    justify-content: center;
 
 }
 .benefits-link {
@@ -295,6 +297,8 @@ body {
 /* ======Footer Mobile=== */
 .footer{
      background-color: #2E2F42;
+     width: 320px;
+     height: 664px;
    
 }
 .footer-marketing{
@@ -339,6 +343,45 @@ body {
     color: #ffffff;
     text-align: center;
 }
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+}
+.subscribe-form{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+.subscribe-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 96px;
+  
+}
 .social {
     font-weight: 500;
     font-size: 16px;
@@ -372,6 +415,215 @@ body {
     height: 40px;
 }
 /* ======Footer Mobile=== */
+/* ======Backdrop====== */
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(100%);
+    transition: transform 250ms linear;
+
+}
+.backdrop.is-open{
+    transform: translateX(0%);
+}
+.subscribe-btn-icon {
+    margin-left: 16px;
+}
+/* ======Backdrop====== */
+/* =======Modal===== */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 288px;
+    min-height: 640px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+
+}
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+.modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 16px;
+}
+/* =======Modal===== */
+/* ======Form====== */
+.review-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.review-form-field-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+
+}
+
+.comment {
+    margin-bottom: 16px;
+}
+
+.input-icons {
+    position: relative;
+}
+
+.review-form-field {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.review-form-field:focus {
+    border-color: #4D5AE5;
+
+}
+
+.review-form-field-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.review-form-field:focus+.review-form-field-icon {
+    fill: #4D5AE5;
+}
+
+.review-form-message {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.review-form-message:focus {
+    border-color: #4D5AE5;
+}
+
+
+.review-form-checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+
+}
+
+.review-form-checkbox-wrapper {
+    margin-bottom: 24px;
+
+}
+
+.review-form-owm-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.review-form-checkbox:checked+.review-form-checkbox-label .review-form-owm-checkbox {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+
+}
+
+.privacy-policy-link {
+    color: #4d5ae5;
+}
+
+.review-form-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ======Form====== */
 
  /* ======Mobile menu======== */
  .mobile-open-btn{
@@ -383,7 +635,6 @@ body {
     right: 0;
  }
  .mobile-menu{
-   
     top: 0;
     left: 0;
     width: 100%;
@@ -482,3 +733,243 @@ body {
     border-radius: 50%;
 }
  /* ======Mobile menu======== */
+@media screen and (max-width: 767px) {
+.mobile-open-btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .mobile-menu {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999999;
+        background-color: #FFF;
+        transform: translateX(100%);
+        transition: transform 250ms linear;
+    }
+
+    .mobile-menu.is-open {
+        transform: translateX(0%);
+    }
+
+    .mobile-container {
+        position: relative;
+
+    }
+
+    .mobile-menu-close-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        background-color: #ffffff;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+}
+
+ @media screen and (min-width: 768px){
+    .container {
+            width: 736px;
+        }
+    /* ======Header Tablet==== */
+    .menu {
+        display: flex;
+        gap: 40px;
+          }
+    .mobile-menu{
+        display: none;
+          }
+    .mobile-open-btn{
+        display: none;
+          }
+    .menu-item {
+        display: flex;
+        gap: 40px;
+    }
+        .logo {
+    
+            margin-right: 120px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #4d5ae5;
+        }
+    
+        .logo:hover,
+        .logo:focus {
+            color: #404bbf;
+        }
+         .menu-link {
+             padding: 24px 0;
+             font-size: 16px;
+             font-weight: 500;
+             line-height: 1.5;
+             letter-spacing: 0.02em;
+             color: #2E2F42;
+             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+         }
+                 .menu-link:hover,
+                 .menu-link:focus {
+                     color: #404bbf;
+                 }
+           .main-conteiner {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+    
+    
+           }
+           .page-navigation{
+            display: flex;
+            align-items: center;
+           }
+                           .current {
+                               position: relative;
+                               color: #404bbf;
+                           }
+                        .current::after {
+            
+                            position: absolute;
+                            bottom: -1px;
+                            left: 0;
+                            width: 100%;
+                            height: 4px;
+                            border-radius: 2px;
+                            background-color: #404BBF;
+                            content: '';
+                        }
+    .address {
+        
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        font-style: normal;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .address-link{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1.16;
+                    letter-spacing: 0.04em;
+                    color: #434455;
+            }
+    /* ======Header Tablet==== */
+/* =====HERO Section Tablet*/
+.main-title {
+    background-color: #2e2f42;
+    padding-bottom: 188px;
+    width: 768px;
+    height: 438px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office1.jpg);
+    background-size: cover;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.title {
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFF;
+
+}
+.order-service {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    gap: 10px;
+    display: block;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-service:hover,
+.order-service:focus {
+    background-color: #404BBF;
+
+}
+.page-navigation:hover,
+.page-navigation:focus {
+    color: #404BBF;
+}
+/* =====HERO Section Tablet=====*/
+/* =====Our Benefits Tablet===== */
+
+
+.strengths-item {
+    display: flex;
+    gap: 72px;
+    flex-direction: column;
+
+}
+
+.benefits {
+    margin-bottom: 8px;
+}
+
+.benefits-section {
+    width: calc((100% - 72px) / 4);
+}
+
+.strengths {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.strengths-name {
+    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE, #2E2F42);
+}
+
+.strengths-descr {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--SLATE, #434455);
+}
+/* =====Our Benefits Tablet===== */
+ }
