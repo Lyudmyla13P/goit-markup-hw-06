@@ -61,34 +61,7 @@ body {
 /* =======Common styles======= */
 
 /* ========Header Mobile Styles====== */
-.page-header{
-    padding-top: 17.5px;
-    padding-bottom: 17.5px;
-}
-.menu{
-    display: none;
-}
-.address{
-    display: none;
-}
-.logo{
-    margin-right: 76px;
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
-}
- .studio {
-     color: #2e2f42;
- }
- .main-conteiner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
+
  @media screen and (min-width: 320px) {
      .container {
          width: 320px;
@@ -96,6 +69,39 @@ body {
          margin-right: auto;
 
      }
+     .address{
+        display: none;
+     }
+   .page-header {
+       padding-top: 17.5px;
+       padding-bottom: 17.5px;
+   }
+
+   .menu {
+       display: none;
+   }
+
+
+   .logo {
+       margin-right: 76px;
+       font-family: 'Raleway', sans-serif;
+       font-size: 18px;
+       font-weight: 700;
+       line-height: 1.17;
+       letter-spacing: 0.03em;
+       text-transform: uppercase;
+       color: #4d5ae5;
+   }
+
+   .studio {
+       color: #2e2f42;
+   }
+
+   .main-conteiner {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
  }
  /* ========Header Mobile Styles====== */
 /* ==========Hero Section Mobile======== */
