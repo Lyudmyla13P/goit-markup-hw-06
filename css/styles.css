@@ -1820,8 +1820,9 @@ margin: 0 auto;
 /* =====Footer Desktop======= */
 .footer {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
+    margin: 0 auto;
+
 }
 
 .logo-footer {
@@ -1860,6 +1861,12 @@ margin: 0 auto;
 .footer-item {
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
+        align-items: baseline;
+        min-width: 1158px;
+        gap: 0;
+        flex-direction: row;
+        max-width: 584px;
 }
 
 .social {
