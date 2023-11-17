@@ -823,6 +823,13 @@ margin: 0 auto;
           .mobile-menu-current-page {
               color: #404BBF;
           }
+        @media screen and (max-width: 767px) {
+            .main-title {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../../images/retina/Dark-bg@2x-mobile.jpg);
+            }
+        }
 }
 
  @media screen and (min-width: 768px){
