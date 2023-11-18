@@ -840,7 +840,7 @@ margin: 0 auto;
             .main-title {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                    url(../../images/retina/Dark-bg@2x-mobile.jpg);
+                    url(../images/retina/Dark-bg@2x-mobile.jpg);
             }
         }
         .strengths-name{
@@ -952,13 +952,7 @@ margin: 0 auto;
                     letter-spacing: 0.04em;
                     color: #434455;
             }
-                           @media screen and (min-width: 768px) {
-                               .main-title {
-                                   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                                           rgba(46, 47, 66, 0.7)),
-                                       url(../images/retina/Dark-bg@2x-tablet.jpg);
-                               }
-                           }
+                         
     /* ======Header Tablet==== */
 /* =====HERO Section Tablet*/
 .main-title {
@@ -975,6 +969,13 @@ margin: 0 auto;
     position: relative;
 
 }
+  @media screen and (min-width: 768px) {
+      .main-title {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                  rgba(46, 47, 66, 0.7)),
+              url(../images/retina/Dark-bg@2x-tablet.jpg);
+      }
+  }
 .title {
     width: 496px;
     margin-left: auto;
@@ -1442,12 +1443,7 @@ margin: 0 auto;
     text-transform: uppercase;
     color: #4d5ae5;
 }
- @media screen and (min-width: 768px) {
-     .main-title {
-         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                 rgba(46, 47, 66, 0.7)),
-             url(../../images/retina/people-office 1@2x-desktop.jpg);
-     }
+
 .logo:hover,
 .logo:focus {
     color: #404bbf;
@@ -1561,7 +1557,13 @@ margin: 0 auto;
     height: 600px;
 
 }
-
+ @media screen and (min-width: 768px) {
+     .main-title {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                 rgba(46, 47, 66, 0.7)),
+             url(../images/retina/people-office@2x-desktop.jpg);
+     }
+ }
 .title {
     max-width: 496px;
     margin-left: auto;
